@@ -6,6 +6,6 @@ GET | VALUE
 date | YYYY-MM-DD 
 uid | --
 user | --  
-id  | --  
+id  | -- (only x)  
   
 User > Uid > Date
