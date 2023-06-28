@@ -17,7 +17,7 @@ if($e=='&' || !$e){$user_q=substr($u,0,(strpos($u,'&') ? strpos($u,'&') : mb_str
 $user=urldecode(str_replace('+','%2B',$user_q));
 $request=$id ? 'id' : ($user ? 'user/name' : ($uid ? 'user/id' : 'date'));
 $init=$id ? $id : ($user ? $user : ($uid ? $uid : ($date ? date('Y-m-d',strtotime($date)) : date('Y-m-d',time()-86400))));
-$req_type=$id ? 'Id' : ($user ? 'User' : ($Uid ? 'Uid' : 'Date'));
+$req_type=$id ? 'Id' : ($user ? 'User' : ($uid ? 'Uid' : 'Date'));
 $url_type=$type ? '&type='. $type : '';
 $url_index_type=$type ? 'type='. $type : '';
 $type=$id ? '' : ($type ? $type : 'daily');
